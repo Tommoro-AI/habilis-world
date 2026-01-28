@@ -892,7 +892,7 @@ Library 메뉴에서는 설치된 확장팩의 목록을 확인할 수 있으며
         .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 { margin-top: 24px; margin-bottom: 16px; font-weight: 700; line-height: 1.25; color: ${o?"#f0f6fc":"#111"}; }
         .markdown-body h1 { font-size: 2.25em; padding-bottom: 0.3em; border-bottom: 1px solid ${C.border}; }
         .markdown-body h2 { font-size: 1.75em; padding-bottom: 0.3em; border-bottom: 1px solid ${C.border}; }
-        .markdown-body h3 { font-size: 1.5em; }
+        .markdown-body h3 { font-size: 1.5em; pdding-top: 1.5em}
         .markdown-body h4 { font-size: 1.25em; }
         .markdown-body p { margin-bottom: 16px; }
         .markdown-body ul, .markdown-body ol { padding-left: 2em; margin-bottom: 16px; }
