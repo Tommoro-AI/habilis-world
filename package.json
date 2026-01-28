@@ -1,0 +1,29 @@
+{
+  "name": "habilis-world",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "homepage": "https://tommoro-ai.github.io/habilis-world/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@readme/markdown": "^4.0.0",
+    "github-markdown-css": "^5.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0"
+  }
+}
