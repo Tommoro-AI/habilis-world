@@ -93,7 +93,7 @@
   },
   {
     "tag": "h2",
-    "text": "6. 학습 데이터 구축(전처리)(*)",
+    "text": "6. 학습 데이터 구축(전처리)",
     "link": "docs/console/6_training_data.md"
   },
   {
@@ -108,7 +108,7 @@
   },
   {
     "tag": "h2",
-    "text": "7. 실시간 모델 추론(*)",
+    "text": "7. 실시간 모델 추론",
     "link": "docs/console/7_inference.md"
   }
 ]
