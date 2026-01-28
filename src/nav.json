@@ -28,6 +28,11 @@
     "link": "docs/launcher/2._login.md"
   },
   {
+    "tag": "h2",
+    "text": "3. 확장팩 다운로드",
+    "link": "docs/launcher/3._download_extension.md"
+  },
+  {
     "tag": "h1",
     "text": "Habilis Console"
   },
