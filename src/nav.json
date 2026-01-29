@@ -51,6 +51,12 @@
     "text": "2.1 신규 디바이스 등록",
     "link": "docs/console/2.1_new_device.md"
   },
+  {
+    "tag": "h3",
+    "text": "2.2 추가 로봇 네트워크",
+    "link": "docs/console/2.2_add_robot.md"
+  },
+  
     {
     "tag": "h2",
     "text": "3.로봇 운영 준비",
