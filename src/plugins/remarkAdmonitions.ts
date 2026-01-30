@@ -33,7 +33,6 @@ export default function remarkAdmonitions() {
         children: [
             { type: "text", value: ` ${title}` }
         ],
-        // ${iconFor(kind)}
       };
 
       const contentNode = {
@@ -50,12 +49,12 @@ export default function remarkAdmonitions() {
   };
 }
 
-function iconFor(kind: string) {
-    switch (kind) {
-        case "info": return "ℹ️";
-        case "warning": return "⚠️";
-        case "danger": return "🔥";
-        case "tip": return "💡";
-        default: return "📝";
-    }
-}
+// function iconFor(kind: string) {
+//     switch (kind) {
+//         case "info": return "ℹ️";
+//         case "warning": return "⚠️";
+//         case "danger": return "🔥";
+//         case "tip": return "💡";
+//         default: return "📝";
+//     }
+// }
