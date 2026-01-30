@@ -1,26 +1,33 @@
 [
   {
     "tag": "h1",
+    "text": "하빌리스 콘솔이란?",
+    "link": "/README.md"
+  },
+  {
+    "tag": "h1",
     "text": "설치가이드"
   },
   {
     "tag": "h2",
-    "text": "런처 설치 가이드 (Windows / Linux / macOS)"
-  },
-  {
-    "tag": "h3",
-    "text": "1.1 설치 파일 다운로드",
-    "link": "docs/launcher/1.1_download.md"
-  },
-  {
-    "tag": "h3",
-    "text": "1.2 Windows 설치 방법 (MSI)",
-    "link": "docs/launcher/1.2_windows.md"
-  },
-  {
-    "tag": "h3",
-    "text": "1.3 Linux 설치 방법 (AppImage)",
-    "link": "docs/launcher/1.3_linux.md"
+    "text": "1. OS별 런처 설치 가이드",
+    "children": [
+      {
+        "tag": "h3",
+        "text": "1.1 설치 파일 다운로드",
+        "link": "docs/launcher/1.1_download.md"
+      },
+      {
+        "tag": "h3",
+        "text": "1.2 윈도우 설치 방법",
+        "link": "docs/launcher/1.2_windows.md"
+      },
+      {
+        "tag": "h3",
+        "text": "1.3 리눅스 설치 방법",
+        "link": "docs/launcher/1.3_linux.md"
+      }
+    ]
   },
   {
     "tag": "h2",
@@ -44,63 +51,65 @@
   {
     "tag": "h2",
     "text": "2.디바이스 연결 설정",
-    "link": "docs/console/2_device_connection.md"
-  },
+    "children": [
+      {
+        "tag": "h3",
+        "text": "2.1 신규 디바이스 등록",
+        "link": "docs/console/2.1_new_device.md"
+      },
+      {
+        "tag": "h3",
+        "text": "2.2 추가 로봇 네트워크",
+        "link": "docs/console/2.2_add_robot.md"
+      }
+    ]
+  },  
   {
-    "tag": "h3",
-    "text": "2.1 신규 디바이스 등록",
-    "link": "docs/console/2.1_new_device.md"
-  },
-  {
-    "tag": "h3",
-    "text": "2.2 추가 로봇 네트워크",
-    "link": "docs/console/2.2_add_robot.md"
-  },
-  
-    {
     "tag": "h2",
-    "text": "3.로봇 운영 준비",
-    "link": "docs/console/3_robot_operation.md"
-  },
-  {
-    "tag": "h3",
-    "text": "3.1 로봇 자세 변경",
-    "link": "docs/console/3.1_pose_change.md"
-  },
-  {
-    "tag": "h3",
-    "text": "3.2 로봇 자세 등록",
-    "link": "docs/console/3.2_pose_registration.md"
-  },
-  {
-    "tag": "h3",
-    "text": "3.3 로봇 자세 프리셋 관리",
-    "link": "docs/console/3.3_pose_management.md"
+    "text": "3.로봇 운용 준비",
+    "children": [
+      {
+        "tag": "h3",
+        "text": "3.1 로봇 자세 변경",
+        "link": "docs/console/3.1_pose_change.md"
+      },
+      {
+        "tag": "h3",
+        "text": "3.2 로봇 자세 등록",
+        "link": "docs/console/3.2_pose_registration.md"
+      },
+      {
+        "tag": "h3",
+        "text": "3.3 로봇 자세 프리셋 관리",
+        "link": "docs/console/3.3_pose_management.md"
+      }
+    ]
   },
   {
     "tag": "h2",
     "text": "4. 데이터 수집",
-    "link": "docs/console/4_data_collection.md"
-  },
-  {
-    "tag": "h3",
-    "text": "4.1 사전점검",
-    "link": "docs/console/4.1_precheck.md"
-  },
-  {
-    "tag": "h3",
-    "text": "4.2 메타데이터 설정",
-    "link": "docs/console/4.2_metadata.md"
-  },
-  {
-    "tag": "h3",
-    "text": "4.3 초기 자세 이동",
-    "link": "docs/console/4.3_initial_pose.md"
-  },
-  {
-    "tag": "h3",
-    "text": "4.4 데이터 기록",
-    "link": "docs/console/4.4_recording.md"
+    "children": [
+      {
+        "tag": "h3",
+        "text": "4.1 사전점검",
+        "link": "docs/console/4.1_precheck.md"
+      },
+      {
+        "tag": "h3",
+        "text": "4.2 메타데이터 설정",
+        "link": "docs/console/4.2_metadata.md"
+      },
+      {
+        "tag": "h3",
+        "text": "4.3 초기 자세 이동",
+        "link": "docs/console/4.3_initial_pose.md"
+      },
+      {
+        "tag": "h3",
+        "text": "4.4 데이터 기록",
+        "link": "docs/console/4.4_recording.md"
+      }
+    ]
   },
   {
     "tag": "h2",
@@ -109,18 +118,19 @@
   },
   {
     "tag": "h2",
-    "text": "6. 학습 데이터 구축(전처리)",
-    "link": "docs/console/6_training_data.md"
-  },
-  {
-    "tag": "h3",
-    "text": "6.1 데이터 선별",
-    "link": "docs/console/6.1_data_selection.md"
-  },
-  {
-    "tag": "h3",
-    "text": "6.2 데이터 라벨링",
-    "link": "docs/console/6.2_data_labeling.md"
+    "text": "6. 학습 데이터 구축",
+    "children": [
+      {
+        "tag": "h3",
+        "text": "6.1 데이터 선별",
+        "link": "docs/console/6.1_data_selection.md"
+      },
+      {
+        "tag": "h3",
+        "text": "6.2 데이터 라벨링",
+        "link": "docs/console/6.2_data_labeling.md"
+      }
+    ]
   },
   {
     "tag": "h2",

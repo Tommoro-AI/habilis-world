@@ -1,9 +1,27 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkDirective from 'remark-directive';
 import rehypeRaw from 'rehype-raw';
+import remarkAdmonitions from "./plugins/remarkAdmonitions";
 import { NavItem, Theme } from './types';
 import { generateId } from './utils';
+
+
+function normalizeKind(kind: string) {
+  if (kind === 'info') return 'note';
+  if (kind === 'note' || kind === 'warning' || kind === 'tip' || kind === 'danger') return kind;
+  return 'note';
+}
+
+function kindLabelFor(kind: string) {
+  switch (kind) {
+    case 'warning': return 'Warning';
+    case 'danger': return 'Danger';
+    case 'tip': return 'Tip';
+    default: return 'Note';
+  }
+}
 
 type MarkdownViewerProps = {
   content: string;
@@ -34,9 +52,9 @@ export default function MarkdownViewer({
         backgroundColor: theme.bg
       }}
     >
-      <div className="markdown-body" style={{ maxWidth: '900px', margin: '0 auto' }}>
+      <div className="markdown-body" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+          remarkPlugins={[remarkGfm, remarkDirective, remarkAdmonitions]}
           rehypePlugins={[rehypeRaw]}
           components={{
             h1: ({ node: _node, children, ...props }: any) => (
@@ -67,6 +85,7 @@ export default function MarkdownViewer({
           {content}
         </ReactMarkdown>
 
+        {/* 네비게이션 버튼 영역은 그대로 */}
         <div
           style={{
             marginTop: '60px',

@@ -2,6 +2,7 @@ export type NavItem = {
   tag: string;
   text: string;
   link?: string;
+  children?: NavItem[];
 };
 
 export type TocItem = {
