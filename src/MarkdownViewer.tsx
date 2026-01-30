@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkDirective from "remark-directive";
-import remarkAdmonitions from "./plugins/remarkAdmonitions";
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import { NavItem, Theme } from './types';
 import { generateId } from './utils';
 
@@ -23,10 +23,21 @@ export default function MarkdownViewer({
   mainRef,
 }: MarkdownViewerProps) {
   return (
-    <main ref={mainRef} style={{ flex: 1, padding: '40px 60px', minWidth: 0, overflowY: 'auto', boxSizing: 'border-box', backgroundColor: theme.bg }}>
+    <main
+      ref={mainRef}
+      style={{
+        flex: 1,
+        padding: '40px 60px',
+        minWidth: 0,
+        overflowY: 'auto',
+        boxSizing: 'border-box',
+        backgroundColor: theme.bg
+      }}
+    >
       <div className="markdown-body" style={{ maxWidth: '900px', margin: '0 auto' }}>
         <ReactMarkdown
-          remarkPlugins={[remarkDirective, remarkAdmonitions]}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
           components={{
             h1: ({ node: _node, children, ...props }: any) => (
               <h1 id={generateId(String(children))} {...props}>
@@ -43,13 +54,29 @@ export default function MarkdownViewer({
               if (src && src.startsWith('/')) {
                 src = (import.meta as any).env.BASE_URL + src.substring(1);
               }
-              return <img {...props} src={src} style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '10px 0' }} />;
+              return (
+                <img
+                  {...props}
+                  src={src}
+                  style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '10px 0' }}
+                />
+              );
             },
           }}
         >
           {content}
         </ReactMarkdown>
-        <div style={{ marginTop: '60px', paddingTop: '20px', borderTop: `1px solid ${theme.border}`, display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
+
+        <div
+          style={{
+            marginTop: '60px',
+            paddingTop: '20px',
+            borderTop: `1px solid ${theme.border}`,
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: '20px'
+          }}
+        >
           {prevItem ? (
             <button
               onClick={() => handleNavClick(prevItem)}
@@ -79,8 +106,10 @@ export default function MarkdownViewer({
               <span style={{ fontSize: '12px', color: '#666' }}>Previous</span>
               <span style={{ fontWeight: '600' }}>{prevItem.text}</span>
             </button>
-          ) : <div style={{ flex: 1 }} />}
-          
+          ) : (
+            <div style={{ flex: 1 }} />
+          )}
+
           {nextItem ? (
             <button
               onClick={() => handleNavClick(nextItem)}
@@ -111,7 +140,9 @@ export default function MarkdownViewer({
               <span style={{ fontSize: '12px', color: '#666' }}>Next</span>
               <span style={{ fontWeight: '600' }}>{nextItem.text}</span>
             </button>
-          ) : <div style={{ flex: 1 }} />}
+          ) : (
+            <div style={{ flex: 1 }} />
+          )}
         </div>
       </div>
     </main>
