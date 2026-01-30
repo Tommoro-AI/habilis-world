@@ -52,7 +52,7 @@
     
     ![예시 이미지](/images/example.png)
     
-2. 저장이 완료되면 우측 상단의 **Trust ROS Cert** 버튼을 클릭합니다. 
+2. 저장이 완료되면 우측 상단의 **[Trust ROS Cert]** 버튼을 클릭합니다. 
     
     ![예시 이미지](/images/example.png)
     

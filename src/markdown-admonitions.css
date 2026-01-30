@@ -1,10 +1,42 @@
 /* =========================
+   Document readability
+   ========================= */
+
+   .markdown,
+   article {
+     font-size: 1.05rem;
+     line-height: 1.7;
+   }
+    
+/* =========================
+   Document images
+   ========================= */
+ 
+   main img,
+   article img,
+   .markdown img,
+   .admonition img {
+     width: 720px !important;
+     max-width: 80% !important;
+     height: auto !important;
+   
+     display: block !important;
+     margin: 20px auto !important;
+   
+     border-radius: 6px !important;
+     background: #fff !important;
+   
+     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.12) !important;
+   }
+   
+   
+/* =========================
   Admonition (Isaac Style)
   ========================= */
 
   .markdown-body .admonition {
     position: relative;
-    margin: 1.5em 0;
+    margin: 0.5em 0;
     border-radius: 8px;
     border-left: 5px solid transparent;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -41,7 +73,9 @@
 
   .markdown-body .admonition-content {
     padding: 16px;
-    color: #1f2328; 
+    color: #1f2328;
+    margin-top: 0.2rem !important; 
+    padding-bottom: 0.2rem;
   }
 
   .markdown-body .admonition-content strong {
@@ -280,4 +314,3 @@ nav li a.active::before, nav li a:hover::before {
     padding: 0 !important;
     white-space: pre;
   }
-  

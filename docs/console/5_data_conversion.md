@@ -8,7 +8,7 @@
     
     ![예시 이미지](/images/example.png)
     
-3. **Convert selected task** 버튼을 눌러 LeRobot 데이터 형식으로의 변환을 진행합니다.
+3. **[Convert selected task]** 버튼을 눌러 LeRobot 데이터 형식으로의 변환을 진행합니다.
     
     ![예시 이미지](/images/example.png)
     

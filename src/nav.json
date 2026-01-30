@@ -6,11 +6,11 @@
   },
   {
     "tag": "h1",
-    "text": "설치가이드"
+    "text": "하빌리스 런처"
   },
   {
     "tag": "h2",
-    "text": "1. OS별 런처 설치 가이드",
+    "text": "1. OS별 설치 가이드",
     "children": [
       {
         "tag": "h3",
@@ -31,7 +31,7 @@
   },
   {
     "tag": "h2",
-    "text": "2. 로그인",
+    "text": "2. 하빌리스 런처 로그인",
     "link": "docs/launcher/2._login.md"
   },
   {
@@ -40,8 +40,13 @@
     "link": "docs/launcher/3._download_extension.md"
   },
   {
+    "tag": "h2",
+    "text": "4. 확장팩 실행",
+    "link": "docs/launcher/4._execute_extension.md"
+  },
+  {
     "tag": "h1",
-    "text": "Habilis Console"
+    "text": "하빌리스 콘솔"
   },
   {
     "tag": "h2",
