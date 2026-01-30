@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkDirective from "remark-directive";
+import remarkAdmonitions from "./plugins/remarkAdmonitions";
 import { NavItem, Theme } from './types';
 import { generateId } from './utils';
 
@@ -24,6 +26,7 @@ export default function MarkdownViewer({
     <main ref={mainRef} style={{ flex: 1, padding: '40px 60px', minWidth: 0, overflowY: 'auto', boxSizing: 'border-box', backgroundColor: theme.bg }}>
       <div className="markdown-body" style={{ maxWidth: '900px', margin: '0 auto' }}>
         <ReactMarkdown
+          remarkPlugins={[remarkDirective, remarkAdmonitions]}
           components={{
             h1: ({ node: _node, children, ...props }: any) => (
               <h1 id={generateId(String(children))} {...props}>

@@ -14,8 +14,8 @@ Habilis Console은 로봇 운영 및 데이터 관리를 위한 통합 웹 플�
     
     [habilis-console.com](https://habilis-console.com/)
     
-    [이미지]
+    ![예시 이미지](/images/example.png)
     
 2. 바로 메인화면으로 진입합니다.
 
-[이미지]
+![예시 이미지](/images/example.png)
