@@ -12,7 +12,7 @@
 
 - **카메라 뷰 확인:** **Record** 메뉴에 접속하여 정면(Front) 및 측면(Side) 카메라 피드가 화면에 정상적으로 출력되는지 확인합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 
 > **💡 [ 중요 ] 영상이 안나올 경우**
@@ -21,7 +21,7 @@
 >     - robot-manager 확장팩 실행 여부 확인
 >     - dataset-manager 확장팩 실행 여부 확인 + IP 주소를 올바르게 작성했는지 확인합니다.
 >     
->     ![예시 이미지](/images/example.png)
+>     ![예시 이미지](/image/example.png)
 >     
 > - **영상 하단 캡션은 나오지만 영상이 나오지 않는 경우**
 >     - Config 페이지에서 디바이스를 재등록합니다.
@@ -38,22 +38,22 @@
     - `Task Instruction`: 로봇이 수행해야 할 구체적인 작업 지시문을 입력합니다.
     
 
-![예시 이미지](/images/example.png)
+![예시 이미지](/image/example.png)
 
 > **🛠 [ 선택 ] 메타데이터 고정 및 자동 완성**
 > : 동일한 메타데이터 저장, 로드, 삭제 기능을 합니다.
 > 
 > - **설정 삭제**: Load Preference 창에서 파일 목록을 선택 후 Delete 버튼을 클릭하여 삭제합니다.
 >     
->     ![예시 이미지](/images/example.png)
+>     ![예시 이미지](/image/example.png)
 >     
 > - **설정 불러오기**: Load Preference 창에서 **Load** 버튼을 클릭하면, 저장되었던 메타데이터가 로드됩니다.
 >     
->     ![예시 이미지](/images/example.png)
+>     ![예시 이미지](/image/example.png)
 >     
 > - **설정 저장**: 메타데이터 작성 후 **Save Preference** 창에서 **Save** 버튼을 눌러 저장합니다.
 >     
->     ![예시 이미지](/images/example.png)
+>     ![예시 이미지](/image/example.png)
 
 ---
 
@@ -61,18 +61,18 @@
 
 1. 상단 포즈 토글에서 원하는 로봇 자세 프리셋을 선택합니다
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 2. 우측 초록색 **신발 모양 아이콘**을 클릭하여 로봇의 자세를 변경합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 
 ### 4.4 데이터 기록
 
 1. 화면 하단의 **빨간색 녹화 버튼**을 클릭하여 데이터 기록을 시작합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 
 > **⚠️ [ 주의 ] 데이터 누락 주의**
@@ -82,7 +82,7 @@
 
 1. 삭제 아이콘을 눌러서 기록 도중에 취소할 수 있습니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 2. 저장된 원본 데이터는 `/habilis_dataset_manager/data/raw/{folder_name}`에 저장됩니다. 
 - 원본 데이터 폴더 구조는 다음과 같습니다.

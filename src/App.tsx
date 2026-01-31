@@ -11,6 +11,17 @@ import TOC from './TOC';
 import SearchModal from './SearchModal';
 import MarkdownViewer from './MarkdownViewer';
 
+function flattenNav(items: NavItem[]): NavItem[] {
+  let flat: NavItem[] = [];
+  items.forEach((item) => {
+    flat.push(item);
+    if (item.children && item.children.length > 0) {
+      flat = flat.concat(flattenNav(item.children));
+    }
+  });
+  return flat;
+}
+
 export default function ReadmeViewer() {
   const [currentContent, setCurrentContent] = useState(readme);
   const [activeItemText, setActiveItemText] = useState('시작하기');
@@ -56,25 +67,30 @@ export default function ReadmeViewer() {
     closeSearchModal();
   };
 
-  const currentIndex = useMemo(() => (navConfig as NavItem[]).findIndex(item => item.text === activeItemText), [activeItemText]);
+  const flatNavList = useMemo(() => flattenNav(navConfig as NavItem[]), []);
 
+  const currentIndex = useMemo(
+    () => flatNavList.findIndex((item) => item.text === activeItemText),
+    [flatNavList, activeItemText]
+  );
+  
   const prevItem = useMemo(() => {
     let i = currentIndex - 1;
     while (i >= 0) {
-      if ((navConfig as NavItem[])[i].link) return (navConfig as NavItem[])[i];
+      if (flatNavList[i]?.link) return flatNavList[i];
       i--;
     }
     return null;
-  }, [currentIndex]);
+  }, [currentIndex, flatNavList]);
 
   const nextItem = useMemo(() => {
     let i = currentIndex + 1;
-    while (i < (navConfig as NavItem[]).length) {
-      if ((navConfig as NavItem[])[i].link) return (navConfig as NavItem[])[i];
+    while (i < flatNavList.length) {
+      if (flatNavList[i]?.link) return flatNavList[i];
       i++;
     }
     return null;
-  }, [currentIndex]);
+  }, [currentIndex, flatNavList]);
 
   const toc = currentContent
     .split('\n')

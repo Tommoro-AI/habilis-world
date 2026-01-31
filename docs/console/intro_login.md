@@ -14,8 +14,8 @@
     
     [habilis-console.com](https://habilis-console.com/)
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 2. 바로 메인화면으로 진입합니다.
 
-![예시 이미지](/images/example.png)
+![예시 이미지](/image/example.png)

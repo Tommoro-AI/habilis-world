@@ -4,19 +4,19 @@
 
 1. 좌측 메뉴 바에서 **Storage** 탭을 클릭하여 데이터 변환 화면에 진입합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 2. **Task name candidates** 에서 변환하고자 하는 Task name을 선택합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 3. **Convert selected task** 버튼을 눌러 LeRobot 데이터 형식으로의 변환을 진행합니다.
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 4. 상단 **Convert Status**에서 변환 진행율을 확인할 수 있습니다. 
     
-    ![예시 이미지](/images/example.png)
+    ![예시 이미지](/image/example.png)
     
 - Task: 현재 변환중인 Task name 입니다.
 - Folder: 현재 변환중인 Folder name 입니다.
@@ -40,4 +40,4 @@
 > - Excluded tags: 제외할 태그
 > - Included tags: 포함할 태그
 > 
-> ![예시 이미지](/images/example.png)
+> ![예시 이미지](/image/example.png)

@@ -101,18 +101,23 @@
       },
       {
         "tag": "h3",
-        "text": "4.2 메타데이터 설정",
-        "link": "docs/console/4.2_metadata.md"
+        "text": "4.2 메타데이터 작성",
+        "link": "docs/console/4.2_create_metadata.md"
       },
       {
         "tag": "h3",
-        "text": "4.3 초기 자세 이동",
-        "link": "docs/console/4.3_initial_pose.md"
+        "text": "4.3 메타데이터 관리",
+        "link": "docs/console/4.3_metadata_manage.md"
       },
       {
         "tag": "h3",
-        "text": "4.4 데이터 기록",
-        "link": "docs/console/4.4_recording.md"
+        "text": "4.4 초기 자세 이동",
+        "link": "docs/console/4.4_initial_pose.md"
+      },
+      {
+        "tag": "h3",
+        "text": "4.5 데이터 기록",
+        "link": "docs/console/4.5_recording.md"
       }
     ]
   },
