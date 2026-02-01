@@ -53,11 +53,18 @@
   font-display: swap;
 }
 
-
 body {
   font-family: 'Pretendard', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
 }
 
 .markdown-body {
   font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
+  font-size: 1.24rem !important; 
+  line-height: 1.2 !important; 
+  letter-spacing: -0.04em !important;
+  color: #24292f;
 }
+
+.markdown-body h1 { font-size: 2.0rem; margin-bottom: 24px; }
+.markdown-body h2 { font-size: 1.5rem; margin-top: 40px; }
+.markdown-body h3 { font-size: 1.25rem; }
