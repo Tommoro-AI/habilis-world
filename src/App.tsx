@@ -158,6 +158,28 @@ export default function ReadmeViewer() {
         .markdown-body a { color: ${theme.link}; text-decoration: none; }
         .markdown-body a:hover { text-decoration: underline; }
         .markdown-body hr { height: 0.25em; padding: 0; margin: 24px 0; background-color: ${theme.border}; border: 0; }
+
+        /* Tabbed content for OS instructions */
+        .tab-group { border: 1px solid ${theme.border}; border-radius: 8px; margin: 12px 0 8px; background: ${isDarkMode ? '#0f141a' : '#fdfefe'}; }
+        .tab-input { display: none; }
+        .tab-labels { display: flex; gap: 0; border-bottom: 1px solid ${theme.border}; background: ${isDarkMode ? '#0b0f14' : '#f7f9fb'}; }
+        .tab-label { flex: 1; text-align: center; padding: 12px 10px; cursor: pointer; font-weight: 600; color: ${theme.text}; border-right: 1px solid ${theme.border}; user-select: none; }
+        .tab-label:last-child { border-right: none; }
+        .tab-label:hover { background: ${theme.hoverItemBg}; }
+        .tab-panels { padding: 16px 18px; }
+        .tab-panel { display: none; }
+        .tab-label.is-active { background: ${theme.activeItemBg}; color: ${theme.activeItemText}; }
+        #ip-tab-linux:checked ~ .tab-labels label[for="ip-tab-linux"],
+        #ip-tab-mac:checked ~ .tab-labels label[for="ip-tab-mac"],
+        #ip-tab-windows:checked ~ .tab-labels label[for="ip-tab-windows"] {
+          background: ${theme.activeItemBg};
+          color: ${theme.activeItemText};
+        }
+        #ip-tab-linux:checked ~ .tab-panels .tab-panel[data-tab="ip-tab-linux"],
+        #ip-tab-mac:checked ~ .tab-panels .tab-panel[data-tab="ip-tab-mac"],
+        #ip-tab-windows:checked ~ .tab-panels .tab-panel[data-tab="ip-tab-windows"] {
+          display: block;
+        }
       `}</style>
 
       <Sidebar

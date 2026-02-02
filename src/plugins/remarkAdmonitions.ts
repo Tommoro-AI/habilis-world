@@ -35,8 +35,9 @@ export default function remarkAdmonitions() {
         ],
       };
 
+      // Wrap original children in a block-level div so nested HTML (e.g., custom tab markup) renders instead of being escaped.
       const contentNode = {
-          type: "paragraph",
+          type: "div",
           data: {
               hName: "div",
               hProperties: { className: ["admonition-content"] }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkDirective from 'remark-directive';
@@ -40,6 +40,46 @@ export default function MarkdownViewer({
   theme,
   mainRef,
 }: MarkdownViewerProps) {
+  // Bind tab groups in markdown so only one panel shows; drive everything via label clicks for reliability.
+  useEffect(() => {
+    const groups = Array.from(document.querySelectorAll<HTMLElement>('.tab-group'));
+    const cleanups: (() => void)[] = [];
+
+    groups.forEach((group) => {
+      const inputs = Array.from(group.querySelectorAll<HTMLInputElement>('.tab-input'));
+      const labels = Array.from(group.querySelectorAll<HTMLLabelElement>('.tab-label'));
+      const panels = Array.from(group.querySelectorAll<HTMLElement>('.tab-panel'));
+
+      const setActive = (id: string) => {
+        inputs.forEach((i) => (i.checked = i.id === id));
+        panels.forEach((panel) => {
+          const match = panel.dataset.tab === id;
+          panel.style.display = match ? 'block' : 'none';
+        });
+        labels.forEach((label) => {
+          const isActive = label.htmlFor === id;
+          if (isActive) label.classList.add('is-active');
+          else label.classList.remove('is-active');
+        });
+      };
+
+      const initial = inputs.find((i) => i.checked)?.id || panels[0]?.dataset.tab || inputs[0]?.id;
+      if (initial) setActive(initial);
+
+      const labelHandler = (e: Event) => {
+        const label = (e.target as HTMLElement).closest<HTMLLabelElement>('.tab-label');
+        if (!label) return;
+        const targetId = label.htmlFor;
+        if (targetId) setActive(targetId);
+      };
+
+      group.addEventListener('click', labelHandler);
+      cleanups.push(() => group.removeEventListener('click', labelHandler));
+    });
+
+    return () => cleanups.forEach((fn) => fn());
+  }, [content]);
+
   return (
     <main
       ref={mainRef}
@@ -56,6 +96,7 @@ export default function MarkdownViewer({
         <ReactMarkdown
           remarkPlugins={[remarkGfm, remarkDirective, remarkAdmonitions]}
           rehypePlugins={[rehypeRaw]}
+          skipHtml={false}
           components={{
             h1: ({ node: _node, children, ...props }: any) => (
               <h1 id={generateId(String(children))} {...props}>
