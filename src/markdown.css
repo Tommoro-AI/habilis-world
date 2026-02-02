@@ -16,8 +16,8 @@
    article img,
    .markdown img,
    .admonition img {
-     width: 900px !important;
-     max-width: 80% !important;
+     /* width: 900px !important; */
+     /* max-width: 80%  !important; */
      height: auto !important;
    
      display: block !important;

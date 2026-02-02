@@ -117,7 +117,7 @@ export default function MarkdownViewer({
                 <img
                   {...props}
                   src={src}
-                  style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '10px 0' }}
+                  style={{ height: 'auto', display: 'block', margin: '10px 0' }}
                 />
               );
             },
