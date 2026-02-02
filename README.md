@@ -1,7 +1,7 @@
 # 하빌리스 콘솔이란<br /><div style="background:#f3f4f6;border:1px solid #33bfc1ff;padding:12px 14px;color:#000; font-size:16px;border-radius:10px;margin:12px 0;line-height:1.6;">  🌏️ <strong> 하빌리스 콘솔</strong>은 <br />휴머노이드 로봇 데이터를 수집하고, 변환하고, 학습하고, 현실에서 실행하기까지 전 과정을 견고한 파이프라인으로 연결하여 제공하는 휴머노이드 학습용 소프트웨어 생태계입니다.🌏️<br />
 </div><br />
 
-![habilis console](./image/Habilis_console_block_diagram.png "max=800")
+![habilis console](./public/image/Habilis_console_block_diagram.png "max=800")
 
 <br />
 <strong> “로봇을 학습시키는 일”</strong> 은 더 이상 연구실의 복잡한 스크립트들에 국한되지 않습니다.<br />휴머노이드 로봇으로 <strong> 데이터를 수집하고, 학습 자산으로 가공하고, AI를 훈련시키며, 다시 현실 세계에서 실행되기까지 
