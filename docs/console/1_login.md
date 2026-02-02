@@ -15,7 +15,7 @@
 비밀번호가 기억나지 않는다면 화면 하단의 <strong>[재설정 링크 보내기]</strong>를 클릭하세요. 가입된 이메일로 임시 비밀번호가 발송됩니다. 
 :::
 
-![예시 이미지](/image/1.1_password_reconfiguration.gif)
+![예시 이미지](./image/1.1_password_reconfiguration.gif)
 
 ## Step 3. 로그인 완료
 4. 로그인이 성공하면 아래와 같은 메인 대시보드 화면으로 이동합니다. 
