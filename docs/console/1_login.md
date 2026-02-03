@@ -12,7 +12,7 @@
 ![Console Login](./image/1.1_login.png)
 
 :::info[정보]
-비밀번호가 기억나지 않는다면 화면 하단의 <strong>[재설정 링크 보내기]</strong>를 클릭하세요. 가입된 이메일로 임시 비밀번호가 발송됩니다. 
+비밀번호가 기억나지 않는다면 화면 하단의 <strong> [재설정 링크 보내기]</strong>를 클릭하세요. 가입된 이메일로 임시 비밀번호가 발송됩니다. 
 ![Console Main 페이지](./image/1.1_password_reconfiguration.gif)
 :::
 

@@ -43,8 +43,8 @@ habilis_dataset_manager/data/curation/
 
 :::info[정보]
 태그 기능을 활용하여 원하는 데이터만 필터링하여 변환할 수 있습니다.
-- <strong>Excluded tags</strong>: 특정 태그가 포함된 에피소드를 <strong>제외하고</strong> 변환합니다.
+- <strong> Excluded tags</strong>: 특정 태그가 포함된 에피소드를 <strong> 제외하고</strong> 변환합니다.
 ![예시 이미지](./image/그림37.png)
-- <strong>Included tags</strong>: 특정 태그가 포함된 에피소드만 <strong>포함하여</strong> 변환합니다. 
+- <strong> Included tags</strong>: 특정 태그가 포함된 에피소드만 <strong> 포함하여</strong> 변환합니다. 
 ![예시 이미지](./image/그림38.png)
 :::
