@@ -1,4 +1,5 @@
 [
+  
   {
     "tag": "h1",
     "text": "하빌리스 콘솔이란?",
@@ -7,6 +8,11 @@
   {
     "tag": "h1",
     "text": "하빌리스 런처"
+  },
+  {
+    "tag": "h2",
+    "text": "0. 네트워크 주의사항",
+    "link": "docs/launcher/0._network.md"
   },
   {
     "tag": "h2",
@@ -101,33 +107,33 @@
     "children": [
       {
         "tag": "h3",
-        "text": "4.1 VR 기기 설정",
-        "link": "docs/console/4.1_vr_setup.md"
+        "text": "4.0 VR 기기 설정 (선택 사항)",
+        "link": "docs/console/4.0_vr_setup.md"
       },
       {
         "tag": "h3",
-        "text": "4.2 사전점검",
-        "link": "docs/console/4.2_precheck.md"
+        "text": "4.1 사전점검",
+        "link": "docs/console/4.1_precheck.md"
       },
       {
         "tag": "h3",
-        "text": "4.3 메타데이터 작성",
-        "link": "docs/console/4.3_create_metadata.md"
+        "text": "4.2 메타데이터 작성",
+        "link": "docs/console/4.2_create_metadata.md"
       },
       {
         "tag": "h3",
-        "text": "4.4 메타데이터 관리",
-        "link": "docs/console/4.4_metadata_manage.md"
+        "text": "4.3 메타데이터 관리",
+        "link": "docs/console/4.3_metadata_manage.md"
       },
       {
         "tag": "h3",
-        "text": "4.5 초기 자세 이동",
-        "link": "docs/console/4.5_initial_pose.md"
+        "text": "4.4 초기 자세 이동",
+        "link": "docs/console/4.4_initial_pose.md"
       },
       {
         "tag": "h3",
-        "text": "4.6 데이터 기록",
-        "link": "docs/console/4.6_recording.md"
+        "text": "4.5 데이터 기록",
+        "link": "docs/console/4.5_recording.md"
       }
     ]
   },
@@ -154,7 +160,18 @@
   },
   {
     "tag": "h2",
-    "text": "7. 실시간 모델 추론",
-    "link": "docs/console/7_inference.md"
+    "text": "7. RFM 학습",
+    "link": "docs/console/7_training.md"
+  },
+    {
+    "tag": "h2",
+    "text": "8. 실시간 모델 추론",
+    "link": "docs/console/8_inference.md"
+  },
+  {
+    "tag": "h1",
+    "text": "FAQ",
+    "link": "docs/faq.md"
   }
+
 ]
