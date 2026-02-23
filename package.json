@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://tommoro-ai.github.io/habilis-console/",
+  "homepage": "https://tommoro-ai.github.io/doc_habilis_console/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
