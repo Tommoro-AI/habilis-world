@@ -41,12 +41,12 @@
   },
   {
     "tag": "h2",
-    "text": "3. 확장팩 다운로드",
+    "text": "3. 패키지 다운로드",
     "link": "docs/launcher/3._download_extension.md"
   },
   {
     "tag": "h2",
-    "text": "4. 확장팩 실행",
+    "text": "4. 패키지 실행",
     "link": "docs/launcher/4._execute_extension.md"
   },
   {
@@ -111,56 +111,35 @@
       },
       {
         "tag": "h3",
-        "text": "4.2 메타데이터 작성",
-        "link": "docs/console/4.2_create_metadata.md"
+        "text": "4.2 메타정보 관리",
+        "link": "docs/console/4.2_metadata_manage.md"
       },
       {
         "tag": "h3",
-        "text": "4.3 메타데이터 관리",
-        "link": "docs/console/4.3_metadata_manage.md"
+        "text": "4.3 데이터 기록",
+        "link": "docs/console/4.3_recording.md"
       },
       {
         "tag": "h3",
-        "text": "4.4 초기 자세 이동",
-        "link": "docs/console/4.4_initial_pose.md"
-      },
+        "text": "4.4 데이터 변환",
+        "link": "docs/console/4.4_data_conversion.md" 
+      },   
       {
-        "tag": "h3",
-        "text": "4.5 데이터 기록",
-        "link": "docs/console/4.5_recording.md"
+        "tag": "h2",
+        "text": "4.5. 데이터 선별",
+        "link": "docs/console/4.5_data_selection.md"
       }
     ]
   },
   {
     "tag": "h2",
-    "text": "5. 데이터 형식 변환",
-    "link": "docs/console/5_data_conversion.md"
+    "text": "5. 모델 학습",
+    "link": "docs/console/5_training.md"
   },
   {
     "tag": "h2",
-    "text": "6. 학습 데이터 정제",
-    "children": [
-      {
-        "tag": "h3",
-        "text": "6.1 데이터 선별",
-        "link": "docs/console/6.1_data_selection.md"
-      },
-      {
-        "tag": "h3",
-        "text": "6.2 데이터 라벨링",
-        "link": "docs/console/6.2_data_labeling.md"
-      }
-    ]
-  },
-  {
-    "tag": "h2",
-    "text": "7. RFM 학습",
-    "link": "docs/console/7_training.md"
-  },
-  {
-    "tag": "h2",
-    "text": "8. 실시간 모델 추론",
-    "link": "docs/console/8_inference.md"
+    "text": "6. 실시간 모델 추론",
+    "link": "docs/console/6_inference.md"
   },
   {
     "tag": "h1",
