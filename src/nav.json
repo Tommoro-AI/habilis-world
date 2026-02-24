@@ -1,17 +1,17 @@
 [
   {
     "tag": "h1",
-    "text": "하빌리스 콘솔이란?",
-    "link": "/README.md"
-  },
-  {
-    "tag": "h1",
-    "text": "하빌리스 런처"
+    "text": "하빌리스 콘솔이란",
+    "link": "docs/intro1.md"
   },
   {
     "tag": "h2",
     "text": "로봇실 사전 주의사항",
     "link": "docs/launcher/0._network.md"
+  },
+  {
+    "tag": "h1",
+    "text": "하빌리스 런처"
   },
   {
     "tag": "h2",
@@ -138,7 +138,7 @@
   },
   {
     "tag": "h2",
-    "text": "6. 학습 데이터 구축",
+    "text": "6. 학습 데이터 정제",
     "children": [
       {
         "tag": "h3",
