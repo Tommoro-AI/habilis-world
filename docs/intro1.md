@@ -12,5 +12,3 @@
 5. <strong> Habilis Dataset manager</strong> : 로봇의 동작과 시야를 저장하고 데이터로 변환하는 기능을 제공하는 패키지 입니다. <br />
 6. <strong> Habilis Data storage </strong> : 데이터 저장을 위한 추가적인 리소스를 제공합니다.(문의) <br />
 7. <strong> Habilis AI manager </strong> : 수집한 로봇 데이터로 RFM을 학습시키고 추론 할 수 있습니다. <br />
-
-npm 
