@@ -379,7 +379,7 @@ nav li a.active::before, nav li a:hover::before {
     color: #475569;            
     font-size: 1rem;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-right: 1px solid #f0f0f0;
   }
   
