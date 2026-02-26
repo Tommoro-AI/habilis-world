@@ -111,13 +111,13 @@
       },
       {
         "tag": "h3",
-        "text": "4.2 메타정보 관리",
-        "link": "docs/console/4.2_metadata_manage.md"
+        "text": "4.2 데이터 기록",
+        "link": "docs/console/4.2_recording.md"
       },
       {
         "tag": "h3",
-        "text": "4.3 데이터 기록",
-        "link": "docs/console/4.3_recording.md"
+        "text": "4.3 메타정보",
+        "link": "docs/console/4.3_metadata_manage.md"
       },
       {
         "tag": "h3",
