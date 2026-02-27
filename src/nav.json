@@ -121,13 +121,13 @@
       },
       {
         "tag": "h3",
-        "text": "4.4 데이터 변환",
-        "link": "docs/console/4.4_data_conversion.md" 
+        "text": "4.4 수집 데이터 관리",
+        "link": "docs/console/4.4_raw_data_management.md" 
       },   
-      {
+        {
         "tag": "h2",
-        "text": "4.5. 데이터 선별",
-        "link": "docs/console/4.5_data_selection.md"
+        "text": "4.5 변환 데이터 관리",
+        "link": "docs/console/4.5_data_labeling.md"
       }
     ]
   },
